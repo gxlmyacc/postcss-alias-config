@@ -12,7 +12,7 @@ var path = require('path');
 module.exports = {
   ...
   alias: {
-    '@libs': path.join(__dirname, '/myLibs/')
+    '@': path.resolve(__dirname, 'demo')
   }
   ...
 };
@@ -24,14 +24,14 @@ var path = require('path');
 ...
 
 module.exports = {
+  ...
+  resolve: {
     ...
-    resolve: {
-        ...
-        alias: {
-            '@libs': path.join(__dirname, '/myLibs/')
-        }
+    alias: {
+      '@': path.resolve(__dirname, 'demo')
     }
-    ...
+  }
+  ...
 };
 
 ```
