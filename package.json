@@ -1,0 +1,46 @@
+{
+  "name": "postcss-alias-config",
+  "version": "0.0.1",
+  "description": "This Postcss plugin allows you to use webpack resolve aliases from alias configs in css",
+  "repository": "https://github.com/gxlmyacc/postcss-alias-config",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src -d lib",
+    "prepublish": "npm run build",
+    "build-posscss-demo": "postcss -o demo/out/index.css demo/src/*.css"
+  },
+  "keywords": [
+    "postcss",
+    "webpack",
+    "alias"
+  ],
+  "author": "gxlmyacc <gxl.mymail@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-alias-config": "^0.0.14"
+  },
+  "peerDependencies": {
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-export-default-from": "^7.16.5",
+    "@babel/plugin-proposal-export-namespace-from": "^7.16.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.16.5",
+    "@babel/plugin-transform-destructuring": "^7.16.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.5",
+    "@babel/plugin-transform-parameters": "^7.16.5",
+    "@babel/plugin-transform-spread": "^7.16.5",
+    "@babel/plugin-transform-strict-mode": "^7.16.5",
+    "@babel/register": "^7.16.5",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.15.0",
+    "postcss": "8.4.12",
+    "postcss-cli": "^8.3.1"
+  }
+}

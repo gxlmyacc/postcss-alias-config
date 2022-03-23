@@ -1,0 +1,11 @@
+@import url(//www.baid.com/test.css);
+
+@import url(@/src/test.css);
+
+.test1 {
+  background: url(@/images/a.png) no-repeat;
+}
+
+.tes2 {
+  background: url("@/images/a.png") no-repeat;
+}
