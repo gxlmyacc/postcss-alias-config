@@ -89,7 +89,9 @@ or postcss.config.js:
 // postcss >= 8
 module.exports = {
   plugins: [
-    require('postcss-alias-config/lib/postcss8')
+    require('postcss-alias-config/lib/postcss8')({
+      "config": "./configs/webpack.config.test.js"
+    })
   ]
 };
 ```
